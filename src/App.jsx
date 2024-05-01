@@ -1,4 +1,5 @@
 import "./App.css";
+import Form from "./form";
 import Login from "./login";
 import Note from "./note";
 import {
@@ -14,6 +15,10 @@ function App() {
     {
       path: "/",
       element: <Login></Login>,
+    },
+    {
+      path:"/add_note",
+      element:<Form></Form>
     }
   ]);
   return (
